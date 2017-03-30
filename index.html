@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+<body>
+<div id="siteTableFilter" >
+	<input type="text" />
+</div>
+<a href="#" class=".clear">Clear</a>
+<div id="siteTable"></div>
+
+<script id="tableTemplate" type="text/html">
+    <table>
+    <tr><th class="tHeader">Title</th><th class="tHeader">Media Type</th><th class="tHeader">Location</th><th class="tHeader">Notes</th></tr>
+      {{#rows}}
+        <tr><td>{{title}}</td><td>{{mediaType}}</td><td>{{location}}</td><td>{{notes}}</td></tr>
+      {{/rows}}
+  </table>
+</script>
+<!-- 1c448_yKoiWrK6sf4cHVYv-KV29bzCOQO7EJlVDxDzgM -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+<script src="/sheetsee.js"></script>
+<script src="/dwmm.js"></script>
+</body>
+</html>
